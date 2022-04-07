@@ -32,3 +32,64 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+```
+> Structure Project Design
+
+├── README.md
+├── next-env.d.ts
+├── next.config.js
+├── package.json
+├── public
+│   ├── favicon.ico
+│   └── vercel.svg
+├── src
+│   ├── common
+│   │   ├── components
+│   │   │   └── marketing
+│   │   │       ├── Card
+│   │   │       │   ├── Card.module.css
+│   │   │       │   ├── Card.tsx
+│   │   │       │   └── index.ts
+│   │   │       ├── Footer
+│   │   │       │   ├── Footer.module.css
+│   │   │       │   ├── Footer.tsx
+│   │   │       │   └── index.ts
+│   │   │       └── SimpleGrid
+│   │   │           ├── SimpleGrid.module.css
+│   │   │           ├── SimpleGrid.tsx
+│   │   │           └── index.ts
+│   │   ├── context
+│   │   ├── hooks
+│   │   ├── mocks
+│   │   │   └── db.json
+│   │   ├── models
+│   │   │   ├── FreeText
+│   │   │   │   ├── index.ts
+│   │   │   │   └── interface.ts
+│   │   │   ├── ModuleProperty
+│   │   │   │   ├── index.ts
+│   │   │   │   └── interface.ts
+│   │   │   └── index.ts
+│   │   └── styles
+│   │       ├── Home.module.css
+│   │       └── globals.css
+│   ├── layouts
+│   │   └── default
+│   │       ├── MainLayout.module.css
+│   │       ├── MainLayout.tsx
+│   │       └── index.ts
+│   ├── modules
+│   │   └── home
+│   │       ├── Home.module.css
+│   │       ├── Home.tsx
+│   │       └── index.ts
+│   └── pages
+│       ├── _app.tsx
+│       ├── api
+│       │   └── hello.ts
+│       └── index.tsx
+├── tsconfig.json
+└── yarn.lock
+
+```
